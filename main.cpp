@@ -6,11 +6,13 @@
 int main() {
 	LinkedList<char> l;
 	l.push('h');
-	l.push('o');
+	l.push('e');
 	l.push('l');
 	l.push('l');
 	l.push('o');
-	cout << l.getVal(2) << l.getVal(3) << endl;
+	for (int i = 0; i < l.getSize(); i++) {
+		cout << l.getVal(i) << endl;
+	}
 	cout << l.isEmpty() << endl;
 
 	return 0;

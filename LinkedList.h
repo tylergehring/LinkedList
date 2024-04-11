@@ -44,6 +44,7 @@ public:
 	void insert(int index, T val); //insert val based on index
 	bool isEmpty();
 	T getVal(int index);
+	
 
 };
 
@@ -228,3 +229,5 @@ T LinkedList<T>::getVal(int index) {
 	}
 	return temp->data;
 }
+
+
