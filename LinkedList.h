@@ -44,6 +44,7 @@ public:
 	void insert(int index, T val); //insert val based on index
 	bool isEmpty();
 	T getVal(int index);
+	void assign(int index, T val);
 	
 
 };
@@ -230,4 +231,13 @@ T LinkedList<T>::getVal(int index) {
 	return temp->data;
 }
 
+
+template <typename T>
+void LinkedList<T>::assign(int index, T val) {
+	nodePtr temp = head;
+	for (int i = 0; i < index; i++) {
+		temp = temp->nxt;
+	}
+	temp->data = val;
+}
 
